@@ -1,10 +1,10 @@
 <?php
 
-$servidor = getenv('MYSQLHOST'); // No uses 'localhost', Railway asigna un host diferente
-$baseDeDatos = getenv('MYSQLDATABASE'); // Nombre de la BD en Railway
-$usuario = getenv('MYSQLUSER'); // Usuario asignado por Railway
-$contrasenia = getenv('MYSQLPASSWORD'); // Contraseña generada
-$puerto = getenv('MYSQLPORT'); // Puerto asignado dinámicamente
+$servidor = $_ENV('MYSQLHOST'); // No uses 'localhost', Railway asigna un host diferente
+$baseDeDatos = $_ENV('MYSQLDATABASE'); // Nombre de la BD en Railway
+$usuario = $_ENV('MYSQLUSER'); // Usuario asignado por Railway
+$contrasenia = $_ENV('MYSQLPASSWORD'); // Contraseña generada
+$puerto = $_ENV('MYSQLPORT'); // Puerto asignado dinámicamente
 
 try {
     // Incluye el puerto en la conexión
